@@ -1,4 +1,4 @@
-local config = require("my-theme.config")
+local config = require("mono-colors.config")
 
 local colors = {
 	white = "#ffffff",

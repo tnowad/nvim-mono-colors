@@ -1,10 +1,10 @@
-local colors = require("my-theme.colors")
+local colors = require("mono-colors.colors")
 
 local M = {}
 
 function M.highlights()
 	return {
-    CmpItemAbbr = { fg = colors.fg },
+		CmpItemAbbr = { fg = colors.fg },
 		CmpItemAbbrDeprecated = { fg = colors.fg, strikethrough = true },
 		CmpItemKind = { fg = colors.blue },
 		CmpItemMenu = { fg = colors.fg },

@@ -1,8 +1,8 @@
-local colors = require("my-theme.colors")
-local config = require("my-theme.config")
-local utils = require("my-theme.utils")
-local bufferline = require("my-theme.integrations.bufferline")
-local cmp = require("my-theme.integrations.cmp")
+local colors = require("mono-colors.colors")
+local config = require("mono-colors.config")
+local utils = require("mono-colors.utils")
+local bufferline = require("mono-colors.integrations.bufferline")
+local cmp = require("mono-colors.integrations.cmp")
 local theme = {}
 
 local function set_terminal_colors()
@@ -278,10 +278,10 @@ local function set_groups()
 		["@lsp.typemod.function.readonly"] = { link = "@function" },
 	}
 
-  -- integrations
-  groups = vim.tbl_extend("force", groups, cmp.highlights())
+	-- integrations
+	groups = vim.tbl_extend("force", groups, cmp.highlights())
 
-  -- overrides
+	-- overrides
 	groups =
 		vim.tbl_extend("force", groups, type(config.overrides) == "function" and config.overrides() or config.overrides)
 
@@ -299,7 +299,7 @@ end
 
 function theme.colorscheme()
 	if vim.version().minor < 8 then
-		vim.notify("Neovim 0.8+ is required for my-theme colorscheme", vim.log.levels.ERROR, { title = "Min Theme" })
+		vim.notify("Neovim 0.8+ is required for mono-colors colorscheme", vim.log.levels.ERROR, { title = "Min Theme" })
 		return
 	end
 
@@ -310,7 +310,7 @@ function theme.colorscheme()
 
 	vim.g.VM_theme_set_by_colorscheme = true -- Required for Visual Multi
 	vim.o.termguicolors = true
-	vim.g.colors_name = "my-theme"
+	vim.g.colors_name = "mono-colors"
 
 	set_terminal_colors()
 	set_groups()

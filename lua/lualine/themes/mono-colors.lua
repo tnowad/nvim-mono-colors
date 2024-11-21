@@ -1,5 +1,5 @@
-local colors = require("my-theme.colors")
-local config = require("my-theme.config")
+local colors = require("mono-colors.colors")
+local config = require("mono-colors.config")
 local theme = {}
 
 local bg = config.transparent and "NONE" or colors.bg
