@@ -52,7 +52,7 @@ local function set_groups()
 		EndOfBuffer = { fg = colors.purple },
 		TermCursor = { link = "Cursor" },
 		TermCursorNC = { link = "Cursor" },
-		ErrorMsg = { fg = colors.red },
+		ErrorMsg = { fg = colors.red, bold = true, italic = true },
 		VertSplit = { fg = colors.border, bg = bg },
 		Winseparator = { link = "VertSplit" },
 		SignColumn = { link = "Normal" },
