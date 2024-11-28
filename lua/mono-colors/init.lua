@@ -5,12 +5,6 @@ local cmp = require("mono-colors.integrations.cmp")
 local theme = {}
 
 local function set_groups()
-	local bg = config.transparent and "NONE" or colors.background
-	local diff_add = utils.shade(colors.green, 0.5, colors.background)
-	local diff_delete = utils.shade(colors.red, 0.5, colors.background)
-	local diff_change = utils.shade(colors.blue, 0.5, colors.background)
-	local diff_text = utils.shade(colors.yellowDark, 0.5, colors.background)
-
 	local groups = {
 		-- base
 		Normal = { fg = colors.text_primary, bg = colors.background_primary },
@@ -268,9 +262,6 @@ end
 
 function theme.setup(values)
 	setmetatable(config, { __index = vim.tbl_extend("force", config.defaults, values) })
-
-	theme.bufferline = { highlights = {} }
-	theme.bufferline.highlights = bufferline.highlights(config)
 end
 
 function theme.colorscheme()
