@@ -1,80 +1,41 @@
-local config = require("mono-colors.config")
-
 local colors = {
 	white = "#ffffff",
 	black = "#1e1e1e",
-}
 
-if vim.o.background == "light" then
 	-- background colors
-	colors.bg = config.transparent and "NONE" or "#bababa"
-	colors.bgDark = "#080808"
-	colors.bgDarker = "#121212"
-	colors.bgFloat = "#212121"
-	colors.bgOption = "#121212"
-	-- foreground colors
-	colors.fg = "#bababa"
-	colors.fgAlt = "#fafafa"
-	colors.fgCommand = "#dedede"
-	colors.fgInactive = "#333333"
-	colors.fgDisabled = "#787878"
-	colors.fgLineNr = "#616161"
-	colors.fgSelection = "#e8e8e8"
-	colors.fgSelectionInactive = "#f5f5f5"
-	-- border colors
-	colors.border = "#121212"
-	colors.borderFocus = "#303030"
-	colors.borderDarker = "#1f1f1f"
-	-- ui colors
-	colors.blue = "#a3a3a3"
-	colors.red = "#999999"
-	colors.purple = "#9c9c9c"
-	colors.redDark = "#4c4c4c"
-	colors.orange = "#9c9c9c"
-	colors.blueLight = "#a3a3a3"
-	colors.comment = "#616161"
-	colors.orangeLight = "#b5b5b5"
-	colors.green = "#4c4c4c"
-	colors.yellowDark = "#919191"
-	colors.purpleDark = "#1c1c1c"
-	colors.symbol = "#b2b2b2"
-	colors.primary = "#ffffff"
-	colors.terminalBrightBlack = "#4a4a4a"
-else
-	-- background colors
-	colors.bg = config.transparent and "NONE" or "#212121"
-	colors.bgDark = "#000000"
-	colors.bgDarker = "#121212"
-	colors.bgFloat = "#212121"
-	colors.bgOption = "#121212"
-	-- foreground colors
-	colors.fg = "#bababa"
-	colors.fgAlt = "#fafafa"
-	colors.fgCommand = "#dedede"
-	colors.fgInactive = "#333333"
-	colors.fgDisabled = "#787878"
-	colors.fgLineNr = "#616161"
-	colors.fgSelection = "#e8e8e8"
-	colors.fgSelectionInactive = "#f5f5f5"
-	-- border colors
-	colors.border = "#121212"
-	colors.borderFocus = "#303030"
-	colors.borderDarker = "#1f1f1f"
-	-- ui colors
-	colors.red = "#999999"
-	colors.blue = "#a3a3a3"
-	colors.orange = "#9c9c9c"
-	colors.purple = "#9c9c9c"
-	colors.blueLight = "#a3a3a3"
-	colors.orangeLight = "#b5b5b5"
-	colors.yellowDark = "#919191"
-	colors.green = "#4c4c4c"
-	colors.redDark = "#4c4c4c"
-	colors.purpleDark = "#1c1c1c"
-	colors.comment = "#616161"
-	colors.symbol = "#b2b2b2"
-	colors.primary = "#ffffff"
-	colors.terminalBrightBlack = "#4a4a4a"
-end
+	bg = "#000000",
+	bgDark = "#000000",
+	bgDarker = "#121212",
+	bgFloat = "#212121",
+	bgOption = "#121212",
+	-- foreground colors,
+	fg = "#bababa",
+	fgAlt = "#fafafa",
+	fgCommand = "#dedede",
+	fgInactive = "#333333",
+	fgDisabled = "#787878",
+	fgLineNr = "#616161",
+	fgSelection = "#e8e8e8",
+	fgSelectionInactive = "#f5f5f5",
+	-- border colors,
+	border = "#121212",
+	borderFocus = "#303030",
+	borderDarker = "#1f1f1f",
+	-- ui colors,
+	red = "#999999",
+	blue = "#a3a3a3",
+	orange = "#9c9c9c",
+	purple = "#9c9c9c",
+	blueLight = "#a3a3a3",
+	orangeLight = "#b5b5b5",
+	yellowDark = "#919191",
+	green = "#4c4c4c",
+	redDark = "#4c4c4c",
+	purpleDark = "#1c1c1c",
+	comment = "#616161",
+	symbol = "#b2b2b2",
+	primary = "#ffffff",
+	terminalBrightBlack = "#4a4a4a",
+}
 
 return colors
