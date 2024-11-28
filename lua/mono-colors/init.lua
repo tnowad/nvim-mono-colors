@@ -5,27 +5,6 @@ local bufferline = require("mono-colors.integrations.bufferline")
 local cmp = require("mono-colors.integrations.cmp")
 local theme = {}
 
-local function set_terminal_colors()
-	vim.g.terminal_color_0 = colors.bg
-	vim.g.terminal_color_1 = colors.red
-	vim.g.terminal_color_2 = colors.green
-	vim.g.terminal_color_3 = colors.yellowDark
-	vim.g.terminal_color_4 = colors.blue
-	vim.g.terminal_color_5 = colors.purple
-	vim.g.terminal_color_6 = colors.blueLight
-	vim.g.terminal_color_7 = colors.fg
-	vim.g.terminal_color_8 = colors.fgInactive
-	vim.g.terminal_color_9 = colors.redDark
-	vim.g.terminal_color_10 = colors.orangeLight
-	vim.g.terminal_color_11 = colors.orange
-	vim.g.terminal_color_12 = colors.symbol
-	vim.g.terminal_color_13 = colors.red
-	vim.g.terminal_color_14 = colors.orangeLight
-	vim.g.terminal_color_15 = colors.comment
-	vim.g.terminal_color_background = colors.bg
-	vim.g.terminal_color_foreground = colors.fg
-end
-
 local function set_groups()
 	local bg = config.transparent and "NONE" or colors.bg
 	local diff_add = utils.shade(colors.green, 0.5, colors.bg)
@@ -308,11 +287,10 @@ function theme.colorscheme()
 		vim.api.nvim_command("syntax reset")
 	end
 
-	vim.g.VM_theme_set_by_colorscheme = true -- Required for Visual Multi
+	vim.g.VM_theme_set_by_colorscheme = true
 	vim.o.termguicolors = true
 	vim.g.colors_name = "mono-colors"
 
-	set_terminal_colors()
 	set_groups()
 end
 
