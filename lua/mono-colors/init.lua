@@ -77,7 +77,7 @@ local function set_groups()
 		Float = { link = "Number" },
 
 		Identifier = { fg = colors.text_primary },
-		Function = { fg = colors.ui_container_secondary },
+		Function = { fg = colors.text_primary },
 		Method = { fg = colors.ui_container_secondary },
 		Property = { fg = colors.messages_info },
 		Field = { link = "Property" },
