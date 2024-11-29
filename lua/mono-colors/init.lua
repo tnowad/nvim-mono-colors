@@ -96,7 +96,7 @@ local function set_groups()
 		Macro = { link = "Define" },
 		PreCondit = { fg = colors.messages_error },
 
-		Type = { fg = colors.ui_container_secondary },
+		Type = { fg = colors.text_primary },
 		Struct = { link = "Type" },
 		Class = { link = "Type" },
 
